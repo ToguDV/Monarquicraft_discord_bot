@@ -1,11 +1,14 @@
 import discord
+import os
 import responses
+from dotenv import load_dotenv
 
 
-# Send messages
 async def send_message(message, user_message, is_private):
     try:
-        response = responses.handle_response(user_message)
+        response = responses.get_response(user_message)
+        if response == 'No commands':
+            return
         await message.author.send(response) if is_private else await message.channel.send(response)
 
     except Exception as e:
@@ -13,8 +16,12 @@ async def send_message(message, user_message, is_private):
 
 
 def run_discord_bot():
-    TOKEN = 'YOUR_KEY'
-    client = discord.Client()
+    load_dotenv()
+    TOKEN = os.getenv('TOKEN')
+    intents = discord.Intents.default()
+    intents.message_content = True
+    intents.moderation = True
+    client = discord.Client(intents=intents)
 
     @client.event
     async def on_ready():
@@ -22,24 +29,26 @@ def run_discord_bot():
 
     @client.event
     async def on_message(message):
-        # Make sure bot doesn't get stuck in an infinite loop
         if message.author == client.user:
             return
+        if message.author.bot:
+            return
+        if message.content == "":
+            return
 
-        # Get data about the user
         username = str(message.author)
         user_message = str(message.content)
         channel = str(message.channel)
 
-        # Debug printing
-        print(f"{username} said: '{user_message}' ({channel})")
+        print(f'{username} said: "{user_message}" ({channel})')
 
-        # If the user message contains a '?' in front of the text, it becomes a private message
-        if user_message[0] == '?':
-            user_message = user_message[1:]  # [1:] Removes the '?'
-            await send_message(message, user_message, is_private=True)
-        else:
-            await send_message(message, user_message, is_private=False)
+        await send_message(message, user_message, is_private=False)
 
-    # Remember to run your bot with your personal TOKEN
+    @client.event
+    async def on_member_ban(guild, user):
+        print("Ha sido baneado:" + user.global_name)
+
     client.run(TOKEN)
+
+
+
