@@ -11,13 +11,13 @@ def get_modlog_kick_ban_msg(bot, user, moderator, reason, msg_type):
                                            mod-logs channel
     """
 
-    user_avatar = user.avatar_url
+    user_avatar = user.avatar
 
-    mod_log_ban_message = discord.Embed()
+    mod_log_ban_message = discord.Embed(color=discord.Color.from_rgb(225, 198, 153))
 
     if msg_type == 1:
         mod_log_ban_message.set_author(
-            name="[Banned] " + str(user),
+            name="Ha sido baneado " + str(user),
             icon_url=user_avatar
         )
     elif msg_type == 2:
@@ -32,19 +32,16 @@ def get_modlog_kick_ban_msg(bot, user, moderator, reason, msg_type):
         )
 
     mod_log_ban_message.add_field(
-        name='User',
-        value=f'{user.mention}', inline=True)
+        name='Usuario',
+        value=f'{user.mention}', inline=False)
 
     mod_log_ban_message.add_field(
-        name='Moderator',
-        value=f'{moderator.mention}', inline=True)
+        name='Responsable',
+        value=f'{moderator.mention}', inline=False)
 
     mod_log_ban_message.add_field(
-        name='Reason',
-        value=reason, inline=True)
+        name='Razón',
+        value=reason, inline=False)
+
 
     return mod_log_ban_message
-
-async def user_ban(user: discord.abc.User, guild: discord.Guild):
-    await guild.ban(user, "test", 3)
-    print(user.global_name + " baneado!")

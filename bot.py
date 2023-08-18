@@ -2,6 +2,7 @@ import discord
 import os
 from dotenv import load_dotenv
 from discord.ext import commands
+from utils.moderation import get_modlog_kick_ban_msg
 
 import responses
 
@@ -37,8 +38,11 @@ async def on_message(message):
 
 
 @bot.command()
-async def test(ctx):
-    await ctx.send("webos!")
+async def ban(ctx, member:discord.User = None, reason = "Por causas desconocidas D:"):
+    moderator = ctx.author
+    embed = get_modlog_kick_ban_msg(bot, member, moderator, reason, 1)
+    await ctx.send(embed=embed)
+
 
 async def send_message(message, user_message, is_private):
     try:
