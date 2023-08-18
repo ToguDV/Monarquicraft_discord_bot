@@ -11,5 +11,7 @@ def get_response(message) -> str:
 
     if p_message == '!help':
         return "`This is a help message that you can modify.`"
+    if p_message == "m!ban":
+        return "hola"
 
     return 'No commands'

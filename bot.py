@@ -1,8 +1,44 @@
 import discord
 import os
-import responses
 from dotenv import load_dotenv
+from discord.ext import commands
 
+import responses
+
+intents = discord.Intents.default()
+intents.message_content = True
+intents.moderation = True
+bot = commands.Bot(command_prefix='!', intents=intents)
+
+
+@bot.event
+async def on_ready():
+    print(f'{bot.user} is now running!')
+
+
+@bot.event
+async def on_message(message):
+    await bot.process_commands(message)
+    if message.author == bot.user:
+        return
+    if message.author.bot:
+        return
+    if message.content == "":
+        return
+
+    username = str(message.author)
+    user_message = str(message.content)
+    channel = str(message.channel)
+
+    print(f'{username} said: "{user_message}" ({channel})')
+
+    await send_message(message, user_message, is_private=False)
+
+
+
+@bot.command()
+async def test(ctx):
+    await ctx.send("webos!")
 
 async def send_message(message, user_message, is_private):
     try:
@@ -18,37 +54,16 @@ async def send_message(message, user_message, is_private):
 def run_discord_bot():
     load_dotenv()
     TOKEN = os.getenv('TOKEN')
-    intents = discord.Intents.default()
-    intents.message_content = True
-    intents.moderation = True
-    client = discord.Client(intents=intents)
+    bot.run(TOKEN)
 
-    @client.event
-    async def on_ready():
-        print(f'{client.user} is now running!')
 
-    @client.event
-    async def on_message(message):
-        if message.author == client.user:
-            return
-        if message.author.bot:
-            return
-        if message.content == "":
-            return
 
-        username = str(message.author)
-        user_message = str(message.content)
-        channel = str(message.channel)
 
-        print(f'{username} said: "{user_message}" ({channel})')
 
-        await send_message(message, user_message, is_private=False)
 
-    @client.event
-    async def on_member_ban(guild, user):
-        print("Ha sido baneado:" + user.global_name)
 
-    client.run(TOKEN)
+
+
 
 
 
