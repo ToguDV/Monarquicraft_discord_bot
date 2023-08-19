@@ -43,5 +43,4 @@ def get_modlog_kick_ban_msg(bot, user, moderator, reason, msg_type):
         name='Razón',
         value=reason, inline=False)
 
-
     return mod_log_ban_message

@@ -39,9 +39,11 @@ async def on_message(message):
 
 @bot.command()
 async def ban(ctx, member:discord.User = None, reason = "Por causas desconocidas D:"):
-    moderator = ctx.author
-    embed = get_modlog_kick_ban_msg(bot, member, moderator, reason, 1)
-    await ctx.send(embed=embed)
+    if ctx.message.author.guild_permissions.administrator:
+        moderator = ctx.author
+        await ctx.guild.ban(member, reason=reason, delete_message_days=7)
+        embed = get_modlog_kick_ban_msg(bot, member, moderator, reason, 1)
+        await ctx.send(embed=embed)
 
 
 async def send_message(message, user_message, is_private):
