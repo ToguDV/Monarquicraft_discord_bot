@@ -1,3 +1,6 @@
+import asyncio
+import time
+
 import discord
 import os
 import server_info
@@ -15,9 +18,9 @@ intents.moderation = True
 client = discord.Client(intents=intents)
 tree = app_commands.CommandTree(client)
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-file = discord.File(fp=f"{ROOT_DIR}\\images\\progress\\progress.png")
 dates_percent.calc_percent()
 
+#TEST
 
 @tree.command(
     name="progreso",
@@ -25,6 +28,13 @@ dates_percent.calc_percent()
     guild=discord.Object(id=788191636877344768)
 )
 async def progress(interaction):
+    project_dir = os.path.dirname(__file__)
+    images_dir = os.path.join(project_dir, 'images')
+    progress_dir = os.path.join(images_dir, 'progress')
+    progress_image = os.path.join(progress_dir, 'progress.png')
+    file = discord.File(fp=progress_image)
+
+
     data = server_info.get_data_yml(ROOT_DIR)
     progress_work = data['progress_work']
     progress_date = data['progress_date']
