@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32d63a9f-d054-422f-8e3f-b889479114f6" name="Changes" comment="add requeriments.txt">
-      <change beforePath="$PROJECT_DIR$/requeriments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requeriments.txt" afterDir="false" />
+    <list default="true" id="32d63a9f-d054-422f-8e3f-b889479114f6" name="Changes" comment="fix 2 requeriments.txt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711050228533</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix requeriments.txt">
+      <option name="closed" value="true" />
+      <created>1711050584715</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711050584715</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix 2 requeriments.txt">
+      <option name="closed" value="true" />
+      <created>1711050960527</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711050960527</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +155,8 @@
     <MESSAGE value="progress command" />
     <MESSAGE value="fix image file errors" />
     <MESSAGE value="add requeriments.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add requeriments.txt" />
+    <MESSAGE value="fix requeriments.txt" />
+    <MESSAGE value="fix 2 requeriments.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix 2 requeriments.txt" />
   </component>
 </project>
