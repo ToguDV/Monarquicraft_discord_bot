@@ -68,6 +68,7 @@ async def set_progress(interaction, value:float):
 async def on_ready():
     await tree.sync(guild=discord.Object(id=788191636877344768))
     print(f'{client.user} is now running!')
+    print('started')
     await client.change_presence(status=discord.Status.dnd, activity=discord.Game(name="Monarquicraft"))
 
 
