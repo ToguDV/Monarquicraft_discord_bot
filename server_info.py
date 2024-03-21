@@ -3,7 +3,7 @@ import yaml
 
 
 def set_data(key, value, root_dir):
-    file_path = f"{root_dir}\\data\\server_info.yml"
+    file_path = f"{root_dir}/data/server_info.yml"
     # Verificar si el archivo ya existe
     check_file = os.path.exists(file_path)
     # Cargar datos actuales si el archivo existe
@@ -28,7 +28,7 @@ def set_data(key, value, root_dir):
 
 
 def get_data_yml(root_dir):
-    file_path = f"{root_dir}\\data\\server_info.yml"
+    file_path = f"{root_dir}/data/server_info.yml"
     check_file = os.path.exists(file_path)
     if not check_file: return
     with open(file_path, 'r') as archivo_yml:
