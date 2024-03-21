@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32d63a9f-d054-422f-8e3f-b889479114f6" name="Changes" comment="fix image file errors">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/server_info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/server_info.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/progress/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/progress/progress.png" afterDir="false" />
+    <list default="true" id="32d63a9f-d054-422f-8e3f-b889479114f6" name="Changes" comment="add requeriments.txt">
+      <change beforePath="$PROJECT_DIR$/requeriments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requeriments.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +28,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/cesar/PycharmProjects/monarquibot"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cesar\PycharmProjects\monarquibot" />
@@ -107,7 +105,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707366068902</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add requeriments.txt">
+      <option name="closed" value="true" />
+      <created>1711050214702</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711050214702</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add requeriments.txt">
+      <option name="closed" value="true" />
+      <created>1711050228533</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711050228533</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +138,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="progress command" />
     <MESSAGE value="fix image file errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix image file errors" />
+    <MESSAGE value="add requeriments.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add requeriments.txt" />
   </component>
 </project>
