@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32d63a9f-d054-422f-8e3f-b889479114f6" name="Changes" comment="fixed paths">
+    <list default="true" id="32d63a9f-d054-422f-8e3f-b889479114f6" name="Changes" comment="Add gemini AI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/server_info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/server_info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requeriments.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +162,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711052076609</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add gemini AI">
+      <option name="closed" value="true" />
+      <created>1747996935920</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747996935921</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add gemini AI">
+      <option name="closed" value="true" />
+      <created>1747996994163</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747996994163</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +200,7 @@
     <MESSAGE value="fix 2 requeriments.txt" />
     <MESSAGE value="add started status for pterodactyl detection" />
     <MESSAGE value="fixed paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed paths" />
+    <MESSAGE value="Add gemini AI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gemini AI" />
   </component>
 </project>
