@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32d63a9f-d054-422f-8e3f-b889479114f6" name="Changes" comment="fix 2 requeriments.txt">
+    <list default="true" id="32d63a9f-d054-422f-8e3f-b889479114f6" name="Changes" comment="fixed paths">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/server_info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/server_info.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,14 +30,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/cesar/PycharmProjects/monarquibot"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cesar/PycharmProjects/monarquibot&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cesar\PycharmProjects\monarquibot" />
@@ -145,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711050989935</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add started status for pterodactyl detection">
+      <option name="closed" value="true" />
+      <created>1711051887705</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711051887705</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixed paths">
+      <option name="closed" value="true" />
+      <created>1711052076609</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711052076609</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +183,8 @@
     <MESSAGE value="add requeriments.txt" />
     <MESSAGE value="fix requeriments.txt" />
     <MESSAGE value="fix 2 requeriments.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 2 requeriments.txt" />
+    <MESSAGE value="add started status for pterodactyl detection" />
+    <MESSAGE value="fixed paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed paths" />
   </component>
 </project>
