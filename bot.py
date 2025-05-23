@@ -7,9 +7,7 @@ import dates_percent
 from discord import app_commands
 from dotenv import load_dotenv
 import google.generativeai as genai
-from discord.ext import commands
-from utils.moderation import get_modlog_kick_ban_msg
-import responses
+
 
 # ==== CONFIGURACIÓN DE GEMINI ====
 load_dotenv()
